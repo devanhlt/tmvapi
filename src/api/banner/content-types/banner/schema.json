@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "categories",
+  "collectionName": "banners",
   "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Category",
-    "description": ""
+    "singularName": "banner",
+    "pluralName": "banners",
+    "displayName": "Banner"
   },
   "options": {
     "draftAndPublish": true
@@ -15,10 +14,7 @@
     "name": {
       "type": "string"
     },
-    "code": {
-      "type": "integer"
-    },
-    "icon": {
+    "media": {
       "allowedTypes": [
         "images",
         "files",
