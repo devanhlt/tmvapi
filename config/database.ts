@@ -11,6 +11,8 @@ export default ({ env }) => {
         port: env.int("DATABASE_PORT", 3306),
         database: env("DATABASE_NAME", "strapi"),
         user: env("DATABASE_USERNAME", "strapi"),
+        charset: "utf8mb4",
+        collation: "utf8mb4_unicode_ci",
         password: env("DATABASE_PASSWORD", "strapi"),
         ssl: env.bool("DATABASE_SSL", false) && {
           key: env("DATABASE_SSL_KEY", undefined),
