@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "points",
+  "info": {
+    "singularName": "point",
+    "pluralName": "points",
+    "displayName": "Point",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uid": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "text"
+    },
+    "amount": {
+      "type": "biginteger"
+    },
+    "refCode": {
+      "type": "string"
+    },
+    "typeOfRef": {
+      "type": "enumeration",
+      "enum": [
+        "mua_hang",
+        "qua_tang"
+      ]
+    }
+  }
+}
